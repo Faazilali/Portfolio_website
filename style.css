@@ -1,0 +1,563 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+html{
+    margin-bottom:3rem;
+    scroll-behavior: smooth;
+}
+
+.header{
+    margin-left:8rem;
+    margin-right:8rem;
+    margin-top:2rem;
+    display:flex;
+    justify-content: space-between;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color:#fff;
+}
+
+.header .logo span{
+    color:#00e4e3;
+    display:inline-block;
+}
+
+.header .nav-bar{
+    margin-top:.5rem;
+}
+
+.header .nav-bar ul{
+    display:flex;
+    gap:3rem;
+    justify-content: right;
+}
+
+.header .nav-bar ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header .nav-bar ul li a:hover{
+    color:#00e4e3;
+    transition: .5s ease;
+    text-decoration: underline;
+    text-decoration-color: #00e4e3;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:black;
+    background-color:black;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color:#00e4e3;
+    transition: .5s ease;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+.header span{
+    color:#fff;
+    display: none;
+}
+
+.content{
+    margin-left:8rem;
+    margin-right:8rem;
+    display:flex;
+    margin-top:7rem;
+    gap:15rem;
+}
+
+.content .mine-img{
+    width:100%;
+    width:25rem;
+    border-radius: 50%;
+    height:auto;
+    box-shadow: 2px 2px 32px 8px #00e4e3;
+    cursor: pointer;
+    animation-name: img1;
+    animation-duration: 3s;
+}
+
+.content .mine-img:hover{
+    box-shadow: 2px 2px 32px 15px #00e4e3;
+    transition: .5s ease;
+    transform: translateY(-.5rem);
+}
+
+@keyframes img1{
+    from{
+        opacity:0;
+        transform: translateX(-2rem);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.content .content1{
+    margin-top:3rem;
+    animation-name: content1;
+    animation-duration: 3s;
+}
+
+@keyframes content1{
+    from{
+        opacity:0;
+        transform: translateY(4rem);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.content .content1 h1{
+    color:#fff;
+    font-size:2.5rem;
+}
+
+.content .content1 h2{
+    color:#fff;
+    margin-top:1rem;
+}
+
+.content .content1 span{
+    color: #00e4e3;
+}
+
+.content .content1 p{
+    color:#fff;
+    margin-top:1rem;
+    line-height: 1.5rem;
+}
+
+.icon{
+    margin-top:1.5rem;
+}
+
+.icon ul{
+    display:flex;
+    gap:1.5rem;
+}
+
+.icon ul li i{
+    color:#00e4e3;
+    font-size: 1.5rem;
+    border:2px solid #00e4e3;
+    border-radius: 50%;
+    padding:.4rem;
+    cursor: pointer;
+}
+
+.icon ul li i:hover{
+    background-color: #00e4e3;
+    color:black;
+    border: transparent;
+    transition: .5s ease;
+}
+
+.content1 button{
+    color:#00e4e3;
+    border:2px solid #00e4e3;
+    font-size: 1.5rem;
+    padding:.5rem;
+    margin-top:1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.content1 button:hover{
+    background-color: #00e4e3;
+    color: black;
+    border: transparent;
+    transition: .5s ease;
+    transform: translateY(-.2rem);
+}
+
+.about{
+    margin-left:8rem;
+    margin-right:8rem;
+    display:flex;
+    margin-top:10rem;
+    gap:15rem;
+}
+
+.about .content2{
+    margin-top:10rem;
+    animation-name:content1;
+    animation-duration: 3s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.about .content2 h2{
+    color:#fff;
+    font-size: 1.8rem;
+}
+
+.about .content2 h1{
+    color:#fff;
+    margin-top:.5rem;
+    font-size:2.3rem;
+}
+
+.about .content2 span{
+    color:#00e4e3;
+}
+
+.about .content2 p{
+    color:#fff;
+    margin-top:1rem;
+    line-height: 1.5rem;
+}
+
+.about .img2{
+    width:100%;
+    width:30rem;
+    border-radius: 50%;
+    height:auto;
+    box-shadow: 2px 2px 32px 8px #00e4e3;
+    cursor: pointer;
+    animation-name: img2;
+    animation-duration: 3s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.about .img2:hover{
+    box-shadow: 2px 2px 32px 15px #00e4e3;
+    transition: .5s ease;
+    transform: translateY(-.5rem);
+}
+
+@keyframes img2{
+    from{
+        opacity:0;
+        transform: translateX(6rem);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.content2 button{
+    color:#00e4e3;
+    border:2px solid #00e4e3;
+    font-size: 1.5rem;
+    padding:.5rem;
+    margin-top:1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.content2 button:hover{
+    background-color: #00e4e3;
+    color: black;
+    border: transparent;
+    transition: .5s ease;
+    transform: translateY(-.2rem);
+}
+
+.project{
+    margin-left:8rem;
+    margin-right:8rem;
+    display:flex;
+    margin-top:4rem;
+    gap:2rem;
+}
+
+.project-heading{
+    color:#fff;
+    margin-left:8rem;
+    margin-right:8rem;
+    margin-top:15rem;
+    font-size:3.5rem;
+    text-align: center;
+}
+
+.project-heading span{
+    color:#00e4e3;
+}
+
+.prjt1{
+    border: 2px solid #00e4e3;
+    text-align: center;
+    padding:1.5rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    border-radius: 1rem;
+    animation-name: project;
+    animation-duration: 3s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.prjt1:hover{
+    transition: .5s ease;
+    transform: translateY(-3rem);
+    box-shadow:2px 2px 32px 12px #00e4e3;
+    border: transparent;
+}
+
+.project .prjt1 img{
+    width:20rem;
+}
+
+.project .prjt1 h2{
+    color:#00e4e3;
+    margin-top:1rem;
+}
+
+.project .prjt1 p{
+    color:#fff;
+    margin-top:.5rem;
+}
+
+.project .prjt1 button{
+    color:#00e4e3;
+    border:2px solid #00e4e3;
+    font-size: 1rem;
+    padding:.5rem;
+    margin-top:1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.project .prjt1 button:hover{
+    background-color: #00e4e3;
+    color: black;
+    border: transparent;
+    transition: .5s ease;
+    transform: translateY(-.2rem);
+}
+
+.prjt2{
+    border: 2px solid #00e4e3;
+    text-align: center;
+    padding:1.5rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    border-radius: 1rem;
+    animation-name: project;
+    animation-duration: 3s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.prjt2:hover{
+    transition: .5s ease;
+    transform: translateY(-3rem);
+    box-shadow:2px 2px 32px 12px #00e4e3;
+    border: transparent;
+}
+
+.project .prjt2 img{
+    width:20rem;
+}
+
+.project .prjt2 h2{
+    color:#00e4e3;
+    margin-top:1rem;
+}
+
+.project .prjt2 p{
+    color:#fff;
+    margin-top:.5rem;
+}
+
+.project .prjt2 button{
+    color:#00e4e3;
+    border:2px solid #00e4e3;
+    font-size: 1rem;
+    padding:.5rem;
+    margin-top:1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.project .prjt2 button:hover{
+    background-color: #00e4e3;
+    color: black;
+    border: transparent;
+    transition: .5s ease;
+    transform: translateY(-.2rem);
+}
+
+.prjt3{
+    border: 2px solid #00e4e3;
+    text-align: center;
+    padding:1.5rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    border-radius: 1rem;
+    animation-name: project;
+    animation-duration: 3s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.prjt3:hover{
+    transition: .5s ease;
+    transform: translateY(-3rem);
+    box-shadow:2px 2px 32px 12px #00e4e3;
+    border: transparent;
+}
+
+.project .prjt3 img{
+    width:20rem;
+}
+
+.project .prjt3 h2{
+    color:#00e4e3;
+    margin-top:1rem;
+}
+
+.project .prjt3 p{
+    color:#fff;
+    margin-top:.5rem;
+}
+
+.project .prjt3 button{
+    color:#00e4e3;
+    border:2px solid #00e4e3;
+    font-size: 1rem;
+    padding:.5rem;
+    margin-top:1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.project .prjt3 button:hover{
+    background-color: #00e4e3;
+    color: black;
+    border: transparent;
+    transition: .5s ease;
+    transform: translateY(-.2rem);
+}
+
+@keyframes project{
+    from{
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-heading{
+    color:#fff;
+    margin-left:8rem;
+    margin-right:8rem;
+    margin-top:15rem;
+    font-size:3.5rem;
+    text-align: center;
+}
+
+.contact-heading span{
+    color:#00e4e3;
+}
+
+.contact{
+    margin-left:8rem;
+    margin-right:8rem;
+    display:flex;
+    margin-top:2rem;
+    justify-content: center;
+    gap:3rem;
+    animation-name: form;
+    animation-duration: 3s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.contact .blk1 input{
+    font-size:1rem;
+    color:#00e4e3;
+    padding:1rem;
+    border: 2px solid #00e4e3;
+    border-radius: .5rem;
+    width:25rem;
+}
+
+.contact .blk2 textarea{
+    font-size:1rem;
+    color:#00e4e3;
+    padding:1rem;
+    border: 2px solid #00e4e3;
+    border-radius: .5rem;
+    width:25rem;
+    height:6.2rem;
+}
+
+.contact .blk2 input{
+    color:#00e4e3;
+    border:2px solid #00e4e3;
+    font-size: 1rem;
+    padding:.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact .blk2 input:hover{
+    background-color: #00e4e3;
+    color: black;
+    border: transparent;
+    transition: .5s ease;
+    transform: translateY(-.2rem);
+}
+
+@keyframes form{
+    from{
+        opacity:0;
+        transform: translateY(4rem);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
